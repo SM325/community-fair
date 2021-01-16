@@ -286,7 +286,7 @@ def send_email():
     MSG = "Subject: {}\n\n{}".format(subject, message)
     server.ehlo()
     server.starttls()
-    server.login('slmj5885@gmail.com', '207352816')
+    server.login('slmj5885@gmail.com', password)
     server.sendmail(email, to_send, MSG)
 
     server.quit()
